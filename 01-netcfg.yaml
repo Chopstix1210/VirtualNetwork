@@ -1,0 +1,18 @@
+# Name: Kevin Segovia 
+# ASU ID: 1214337513 
+# ASU Email: kjsegovi@asu.edu 
+# Class: CSE 468
+# Client Config File 
+network:
+  version: 2
+  renderer: networkd 
+  ethernets:
+    enp0s5:
+     dhcp4: no
+     addresses: [192.168.0.10/24]
+     routes:
+       - to: default 
+         via:  192.168.0.100
+     nameservers:
+       addresses: [8.8.8.8, 8.8.4.4]
+  version: 2
